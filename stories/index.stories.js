@@ -5,6 +5,7 @@ import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 
 import { Button, Welcome } from '@storybook/react/demo';
+import Headline from './../src/components/headline';
 
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
 
@@ -17,3 +18,6 @@ storiesOf('Button', module)
       </span>
     </Button>
   ));
+
+storiesOf('Headline', module)
+.add('with text', () => <Headline title='my very first custom headline'></Headline>);

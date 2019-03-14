@@ -119,9 +119,10 @@
     ]
   },
   "devDependencies": {
-    "@storybook/react": "^5.0.1",
     "@storybook/addon-actions": "^5.0.1",
     "@storybook/addon-links": "^5.0.1",
-    "@storybook/addons": "^5.0.1"
+    "@storybook/addons": "^5.0.1",
+    "@storybook/react": "^5.0.1",
+    "axios": "^0.18.0"
   }
 }
