@@ -2,16 +2,14 @@ import React, { Component } from 'react';
 
 import './App.css';
 import Headline from './components/headline';
+import Navigation from './components/navigation/navigation';
 
 class App extends Component {
   
   render() {
     return (
       <div className="App">
-      
-      <Headline title='Where to start'>
-            Edit <code>src/App.js</code> and save to reload.
-      </Headline>
+        <Navigation />
       </div>
     );
   }
