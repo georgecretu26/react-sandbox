@@ -1,8 +1,10 @@
 import React, { Fragment } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
+import Home from './../../containers/home/index';
 import Projects from './../../containers/projects/index';
 import About from './../../containers/about/index';
+import './style.less';
 
 
 const navigationJSON = [
@@ -15,7 +17,7 @@ const Navigation = () => {
     return(
         <Router>
             <div>
-                <ul>
+                <ul className="nav">
                     {navigationJSON.map((navItem, index) => (
                         <li key={navItem.id}>
                             <Link to={navItem.url}>{navItem.name}</Link>
@@ -31,7 +33,7 @@ const Navigation = () => {
 const NavigationRoute = () => {
     return (
         <Fragment>
-            <Route exact path="/" />
+            <Route exact path="/" component={Home}/>
             <Route path="/about/" component={About} />
             <Route path="/projects/" component={Projects} />
         </Fragment>
