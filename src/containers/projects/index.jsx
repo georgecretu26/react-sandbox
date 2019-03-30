@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Card from './../../components/card/card';
+import axios from 'axios';
 
 const projects = [
     {
@@ -25,6 +26,12 @@ class Projects extends Component{
         this.state = {
             projects: projects,
         };
+    }
+
+    componentWillMount(){
+        axios.get('http://localhost:8000/project/')
+        .then(result => console.log(result))
+        .catch(err => console.log(err))
     }
 
     renderProjects(obj){
