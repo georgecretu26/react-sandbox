@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-import Home from './../../containers/home/index';
-import Projects from './../../containers/projects/index';
-import About from './../../containers/about/index';
+import Home from './../../containers/home/';
+import Projects from './../../containers/projects/';
+import About from './../../containers/about/';
 import './style.less';
 
 
